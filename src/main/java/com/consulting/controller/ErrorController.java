@@ -8,10 +8,21 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping
 public class ErrorController {
 
+	@RequestMapping("/403")
+	public ModelAndView Error403() {
+		ModelAndView mv = new ModelAndView("error/403");
+		return mv;
+	}
+	
 	@RequestMapping("/404")
-	public ModelAndView homePage() {
+	public ModelAndView Error404() {
 		ModelAndView mv = new ModelAndView("error/404");
 		return mv;
 	}
 	
+	@RequestMapping("/500")
+	public ModelAndView Error500() {
+		ModelAndView mv = new ModelAndView("error/500");
+		return mv;
+	}
 }
