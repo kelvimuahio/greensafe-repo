@@ -29,14 +29,69 @@ public class GreensafeControllerEN {
 		return new ModelAndView("pages/en/services");
 	}
 	
+	@RequestMapping("/services/how-work")
+	public ModelAndView servicesHowWeWork() {
+		return new ModelAndView("pages/en/services-how-work");
+	}
+	
 	@RequestMapping("/about-us")
 	public ModelAndView AboutUs() {
 		return new ModelAndView("pages/en/about");
 	}
 	
-	@RequestMapping("/carrer")
+	@RequestMapping("/about-us/vision")
+	public ModelAndView AboutUsVision() {
+		return new ModelAndView("pages/en/about-vision");
+	}
+	
+	@RequestMapping("/about-us/mission")
+	public ModelAndView AboutUsMission() {
+		return new ModelAndView("pages/en/about-mission");
+	}
+	
+	@RequestMapping("/about-us/values")
+	public ModelAndView AboutUsValues() {
+		return new ModelAndView("pages/en/about-values");
+	}
+	
+	@RequestMapping("/about-us/team")
+	public ModelAndView AboutUsTeam() {
+		return new ModelAndView("pages/en/about-team");
+	}
+	
+	@RequestMapping("/csr")
+	public ModelAndView csr() {
+		return new ModelAndView("pages/en/csr");
+	}
+	
+	@RequestMapping("/career")
 	public ModelAndView carrer() {
 		return new ModelAndView("pages/en/carrer");
+	}
+	
+	@RequestMapping("/partners")
+	public ModelAndView partners() {
+		return new ModelAndView("pages/en/partners");
+	}
+	
+	@RequestMapping("/clients")
+	public ModelAndView clients() {
+		return new ModelAndView("pages/en/clients");
+	}
+	
+	@RequestMapping("/training")
+	public ModelAndView training() {
+		return new ModelAndView("pages/en/training");
+	}
+	
+	@RequestMapping("/training/online-courses")
+	public ModelAndView onlineCourses() {
+		return new ModelAndView("pages/en/training-online-courses");
+	}
+	
+	@RequestMapping("/training/calendar")
+	public ModelAndView trainingCalendar() {
+		return new ModelAndView("pages/en/training-calendar");
 	}
 	
 	@RequestMapping("/contact-us")

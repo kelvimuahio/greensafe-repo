@@ -548,6 +548,17 @@
     transition: .3s;
 }
 
+.btn-link-2 {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #9B9B9B;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
@@ -557,6 +568,12 @@
 }
 
 .footer .btn.btn-link:hover {
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.btn-link-2:hover {
     color: #FFFFFF;
     letter-spacing: 1px;
     box-shadow: none;
