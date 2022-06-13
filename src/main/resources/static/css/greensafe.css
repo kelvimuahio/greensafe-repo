@@ -5,6 +5,13 @@
 	color:#fff;
 }
 
+.carousel-gs-caption-training{
+	position:absolute;
+	top:5%;
+	left:35%;
+	color:#fff;
+}
+
 .carousel-indicators li{
 	border-radius: 50%;
     width: 12px;
@@ -16,6 +23,8 @@
 .bg-gs-orange{background-color:#F0A340 !important}
 
 .bg-gs-blue{background-color:#02012b !important}
+
+.rounded-gs{border-radius:16px !important}
 
 .MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
     .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }

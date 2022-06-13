@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Greensafe Consulting & Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link th:href="@{img/favicon.ico}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+    <link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+    <link th:href="@{https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap}" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet 
+    <link th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css}" rel="stylesheet"> -->
+    <link th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css}" rel="stylesheet">
+    <link th:href="@{https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link th:href="@{/lib/animate/animate.min.css}" rel="stylesheet">
+    <link th:href="@{/lib/owlcarousel/assets/owl.carousel.min.css}" rel="stylesheet">
+    <link th:href="@{/lib/lightbox/css/lightbox.min.css}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/css/greensafe.css}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    
+    <!-- Flags Stylesheet -->
+    <link th:href="@{/css/flag-icons.min.css}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-6 px-7 text-start ms-auto">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Av 24 Julho nº 354, Maputo </small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+258 21 867 9038</small>
+                </div>
+            </div>
+            <div class="col-lg-2 px-2 text-end mx-auto">
+			    <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link btn-outline-light rounded-circle me-1" href="https://www.facebook.com/GreensafeInternational/">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+                    <a class="btn btn-square btn-link btn-outline-light rounded-circle me-1" href="https://instagram.com/greensafe_moz?igshid=YmMyMTA2M2Y=">
+						<i class="fab fa-instagram"></i>
+					</a>
+                    <a class="btn btn-square btn-link btn-outline-light rounded-circle me-1" href="https://www.linkedin.com/company/greensafe-consultoria-e-servi%C3%A7os/">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+					<a class="btn btn-square btn-link btn-outline-light rounded-circle me-1" href="https://twitter.com/greensafe_moz?s=11&t=Pdo7mfIsVDmeXqg6Wskckw">
+						<i class="fab fa-twitter"></i>
+					</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+			<!-- <img class="img-fluid w-100 h-100" th:src="@{/img/logo1.jpg}" alt="GreenSafe consulting"> -->
+			<img class="img-fluid w-100 h-100" th:src="@{/img/logo-wbg.png}" alt="GreenSafe consulting">
+			
+        </a>
+		
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-5 p-lg-0">
+                <a th:href="@{/en}" class="nav-item nav-link">Home</a>
+                
+				<div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a th:href="@{/en/about-us}" class="dropdown-item">Who are we</a>
+                        <a th:href="@{/en/about-us/mission}" class="dropdown-item">Mission</a>
+                        <a th:href="@{/en/about-us/vision}" class="dropdown-item">Vision</a>
+                        <a th:href="@{/en/about-us/values}" class="dropdown-item">Values</a>
+                        <a th:href="@{/en/about-us/team}" class="dropdown-item">Our Team</a>
+                    </div>
+                </div> 
+                <a th:href="@{/en/csr}" class="nav-item nav-link">CSR</a>
+                <a th:href="@{/en/career}" class="nav-item nav-link">Career</a>
+                <a th:href="@{/en/partners}" class="nav-item nav-link">Partners</a>
+                <a th:href="@{/en/clients}" class="nav-item nav-link">Clients</a>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Services</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a th:href="@{/en/services}" class="dropdown-item">What we do</a>
+                        <a th:href="@{/en/services/how-work}" class="dropdown-item">How we work</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Trainings</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a th:href="@{/en/training}" class="dropdown-item">Training Courses</a>
+                        <a th:href="@{/en/training/online-courses}" class="dropdown-item">Online Courses</a>
+                        <a th:href="@{/en/training/calendar}" class="dropdown-item">Training Calendar</a>
+                    </div>
+                </div> 
+                <a th:href="@{/en/contact-us}" class="nav-item nav-link">Contact us</a>
+            </div>
+            <div class="navbar-nav ms-auto p-0 p-lg-0">
+            	<div class="nav-item dropdown">
+                    <a href="#" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block dropdown-toggle" data-bs-toggle="dropdown">Language</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a th:href="@{/}" class="dropdown-item"> <i class="fi fi-pt"></i> Portuguese</a>
+                        <a href="#" class="dropdown-item"> <i class="fi fi-gb"></i> English</a>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+	<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+	  <!-- <div class="carousel-indicators">
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div> -->
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img th:src="@{/img/teaching-tutor.jpg}" class="d-block w-100 h-img" alt="...">
+		  <!--<div class="carousel-gs-caption-training d-none d-md-block">
+		  	<h2 class="text-white text-center">We do <span class="text-primary">trainings</span> also!!</h2>
+		  	 <p class="text-center">We ensure policies and patterns for Health and Safety at work</p> 
+		  </div>-->
+		</div>
+		<div class="carousel-item">
+		  <img th:src="@{/img/online-tutoring.jpg}" class="d-block w-100 h-img" alt="...">
+		  <!--<div class="carousel-gs-caption-training text-center d-none d-md-block">
+		  	<h2 class="text-white text-center">Meet our teachers...</h2>
+		  	 <p>We are focused on protecting the environment by reducing waste and pollution.</p> 
+		  </div>-->
+		</div>
+	  </div>
+	  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	  </button> -->
+	</div>
+    <!-- Carousel End -->
+
+	<!-- Why us Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+			<div class="row g-5">
+				<p class="text-center" style="color: black; font-size: 35px;"> Why choosing GreenSafe for online courses? </p> 
+			</div>
+            <div class="row g-5">
+                <div class="col-md-12 col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe src="https://player.vimeo.com/video/388059313?loop=false&amp;autoplay=false&amp;muted=false&amp;gesture=media&amp;playsinline=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=false&amp;customControls=true" allowfullscreen="" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; accelerometer; gyroscope" title="Player for Institucional PUCRS Online" data-ready="true" tabindex="-1" style="width: 100%;height:20vw;position: relative;"></iframe>
+					</div>
+                </div>
+                <div class="col-md-12 col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+					<div class="accordion" id="accordionExample">
+					  <div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+						  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<i class="fa-solid fa-person-chalkboard"></i> <span style="color:black; margin-left:10px;">Renowned Teachers</span>
+						  </button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						  <div class="accordion-body">
+							Live the experience of having unforgettable classes with the most renowned specialists from Brazil and the world in each area of ​​knowledge.
+						  </div>
+						</div>
+					  </div>
+					  <div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<i class="fa-solid fa-school"></i> <span style="color:black; margin-left:10px;">Hybrid classes (Presential & Online)</span>
+						  </button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						  <div class="accordion-body">
+							Courses available 100% online, with the same quality and certification as in person.
+						  </div>
+						</div>
+					  </div>
+					  <div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							<i class="fa fa-award"></i> <span style="color:black; margin-left:10px;">Accredited by MINEDH</span>
+							
+						  </button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+						  <div class="accordion-body">
+							Be part of a select group of graduates from Greensafe courses, the best private certification unit in Mozambique and which has the best graduate programs accredited by MINEDH .
+						  </div>
+						</div>
+					  </div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why us End -->
+
+    <!-- Training Courses Start -->
+	<div class="container-xxl">
+        <div class="container about px-lg-0">
+        	<div class="col-lg-12 about-text wow fadeIn" data-wow-delay="0.5s">
+            	<div class="d-flex align-items-center mb-4">
+					<p class="text-center" style="color: black; font-size: 30px;"> Training courses </p> 
+				</div>
+            </div>
+            <div class="row g-0 mx-lg-0" style="margin-bottom: 20px;">
+				<div class="col-lg-3 col-md-3" style="margin: 0px;">
+					<div class="card">
+				    	<img class="card-img" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg" alt="Bologna">
+				        <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<div class="mt-auto">
+								<span style="background-color: #ffc107; width: 170px; height: 30px; color: black; text-align: center;" class="rounded-gs text-center"><small>PÓS-GRADUAÇÃO</small></span>
+							    <p style="font-size: 25px;">Building Information Modeling (BIM)</p>
+							    <p class="card-text">With Msc Engineer Manuel Barros and more. <a class="" th:href="@{/en/training/online-courses}">Details <i class="fa fa-arrow-right"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                <div class="col-lg-3 col-md-3" style="margin: 0px;">
+					<div class="card">
+				    	<img class="card-img" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg" alt="Bologna">
+				        <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<div class="mt-auto">
+								<span style="background-color: #ffc107; width: 170px; height: 30px; color: black; text-align: center;" class="rounded-gs text-center"><small>CERTIFICATION</small></span>
+							    <p style="font-size: 25px;">Business Intelligence & Business Analytics</p>
+							    <p class="card-text">With Msc Engineer Manuel Barros and more. <a class="" th:href="@{/en/training/online-courses}">Details <i class="fa fa-arrow-right"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3" style="margin: 0px;">
+					<div class="card">
+				    	<img class="card-img" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg" alt="Bologna">
+				        <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<div class="mt-auto">
+								<span style="background-color: #ffc107; width: 170px; height: 30px; color: black; text-align: center;" class="rounded-gs text-center"><small>CERTIFICATION</small></span>
+							    <p style="font-size: 25px;">Inbound Marketing</p>
+							    <p class="card-text">With Msc Engineer Manuel Barros and more. <a class="" th:href="@{/en/training/online-courses}">Details <i class="fa fa-arrow-right"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3" style="margin: 0px;">
+					<div class="card">
+				    	<img class="card-img" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg" alt="Bologna">
+				        <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<div class="mt-auto">
+								<span style="background-color: #ffc107; width: 170px; height: 30px; color: black; text-align: center;" class="rounded-gs text-center"><small>CERTIFICATION</small></span>
+							    <p style="font-size: 25px;">Journey Design</p>
+							    <p class="card-text">With Msc Engineer Manuel Barros and more. <a class="" th:href="@{/en/training/online-courses}">Details <i class="fa fa-arrow-right"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            
+            <div class="row g-0 mx-lg-0" style="margin-top: 20px;">
+				<div class="col-lg-3 col-md-3" style="margin: 0px;">
+					<div class="card">
+				    	<img class="card-img" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg" alt="Bologna">
+				        <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<div class="mt-auto">
+								<span style="background-color: #ffc107; width: 170px; height: 30px; color: black; text-align: center;" class="rounded-gs text-center"><small>PÓS-GRADUAÇÃO</small></span>
+							    <p style="font-size: 25px;">Building Information Modeling (BIM)</p>
+							    <p class="card-text">With Msc Engineer Manuel Barros and more. <a class="" th:href="@{/en/training/online-courses}">Details <i class="fa fa-arrow-right"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                <div class="col-lg-3 col-md-3" style="margin: 0px;">
+					<div class="card">
+				    	<img class="card-img" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg" alt="Bologna">
+				        <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<div class="mt-auto">
+								<span style="background-color: #ffc107; width: 170px; height: 30px; color: black; text-align: center;" class="rounded-gs text-center"><small>CERTIFICATION</small></span>
+							    <p style="font-size: 25px;">Business Intelligence & Business Analytics</p>
+							    <p class="card-text">With Msc Engineer Manuel Barros and more. <a class="" th:href="@{/en/training/online-courses}">Details <i class="fa fa-arrow-right"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3" style="margin: 0px;">
+					<div class="card">
+				    	<img class="card-img" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg" alt="Bologna">
+				        <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<div class="mt-auto">
+								<span style="background-color: #ffc107; width: 170px; height: 30px; color: black; text-align: center;" class="rounded-gs text-center"><small>CERTIFICATION</small></span>
+							    <p style="font-size: 25px;">Inbound Marketing</p>
+							    <p class="card-text">With Msc Engineer Manuel Barros and more. <a class="" th:href="@{/en/training/online-courses}">Details <i class="fa fa-arrow-right"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3" style="margin: 0px;">
+					<div class="card">
+				    	<img class="card-img" src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg" alt="Bologna">
+				        <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<div class="mt-auto">
+								<span style="background-color: #ffc107; width: 170px; height: 30px; color: black; text-align: center;" class="rounded-gs text-center"><small>CERTIFICATION</small></span>
+							    <p style="font-size: 25px;">Journey Design</p>
+							    <p class="card-text">With Msc Engineer Manuel Barros and more. <a class="" th:href="@{/en/training/online-courses}">Details <i class="fa fa-arrow-right"></i></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            
+            <div class="text-center py-3 mx-auto wow fadeInDown" style="max-width: 600px;">
+				<a th:href="@{/en/training/online-courses}" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Chek out More <i class="fa fa-arrow-right"></i></a> 
+			</div>
+        </div>
+    </div>
+	<!-- Training Courses End -->
+	
+	<!-- Student enroll interest Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container quote px-lg-0">
+            <div class="row g-0 mx-lg-0 mb-3">
+                <div class="col-lg-5 p-lg-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+					<h1 class="text-primary mb-5 text-center">Not yet our student?</h1>
+					
+					<p class="mb-5" style="color: black; font-size: 35px;"> Receive directly in your email content from GreenSafe on current affairs, courses and renowned professors and professionals. </p>
+					
+					<p> We do not send any kind of spam. </p>
+                    <!-- <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover;" alt="">
+                    </div> -->
+                </div>
+                <div class="col-lg-7 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+						<h3 class="mb-4">Fill the form below:</h3>
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Area of Interest</option>
+                                        <option value="1">Health and Food</option>
+                                        <option value="2">Protection at the work</option>
+                                        <option value="3">Audit</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Student enroll interest End -->
+    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-1">
+            <div class="row g-1">
+                <div class="col-lg-4 col-md-6">
+                    <img class="img-fluid center" th:src="@{/img/logo-wbg.png}" height="150" width="150" style="margin-left: 60px;" alt="...">
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Av 24 Julho nº 354, Maputo</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+258) 868679038 / 833262799 / 858069443</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>greensafe.moz@com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light btn-social" href="https://www.facebook.com/GreensafeInternational/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href="https://instagram.com/greensafe_moz?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href="https://www.linkedin.com/company/greensafe-consultoria-e-servi%C3%A7os/"><i class="fab fa-linkedin-in"></i></a>
+						<a class="btn btn-square btn-outline-light btn-social" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-4">Useful Links</h5>
+                    <a class="btn btn-link-2" th:href="@{/en/training}">Training</a>
+                    <a class="btn btn-link-2" th:href="@{/en/services}">Our Services</a>
+					<a class="btn btn-link-2" th:href="@{/en/news}">News</a>
+                    <a class="btn btn-link-2" th:href="@{/en/career}">Career</a>
+                    <a class="btn btn-link-2" th:href="@{/en/publications}">Publications</a>
+                    <a class="btn btn-link-2" th:href="@{/en/csr}">CSR</a>
+                </div>
+				<div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Latest News</h5>
+                    <p>What to hear more from us? Enter your email down</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Send</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Photo Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded" th:src="@{/img/gallery-1.jpg}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" th:src="@{/img/gallery-2.jpg}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" th:src="@{/img/gallery-3.jpg}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" th:src="@{/img/gallery-4.jpg}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" th:src="@{/img/gallery-5.jpg}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" th:src="@{/img/gallery-6.jpg}" alt="">
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        Copyright &copy; 
+							<script>
+								document.write(new Date().getFullYear())
+							</script>
+						<a href="#">GreenSafe</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script th:src="@{https://code.jquery.com/jquery-3.4.1.min.js}"></script>
+    <script th:src="@{https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/lib/wow/wow.min.js}"></script>
+    <script th:src="@{/lib/easing/easing.min.js}"></script>
+    <script th:src="@{/lib/waypoints/waypoints.min.js}"></script>
+    <script th:src="@{/lib/counterup/counterup.min.js}"></script>
+    <script th:src="@{/lib/owlcarousel/owl.carousel.min.js}"></script>
+    <script th:src="@{/lib/isotope/isotope.pkgd.min.js}"></script>
+    <script th:src="@{/lib/lightbox/js/lightbox.min.js}"></script>
+	
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+	<script th:src="@{/js/greensafe.js}"></script>
+	<!--<script src="js/javascript-plugins-bundle.js"></script>
+	<script src="js/jquery.js"></script>-->
+    
+	<!-- Template Javascript -->
+    <script th:src="@{/js/main.js}"></script>
+	
+</body>
+
+</html>
